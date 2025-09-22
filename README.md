@@ -172,13 +172,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details. Remember to set up your environment variables in the Vercel project settings (especially `GMAIL_USERNAME`, `GMAIL_PASS`, `CONTACT_FORM_RECEIVER_EMAIL`, and `NEXT_PUBLIC_SITE_URL` for the production domain).
 
-## Author
 
-**Utsav Khatri**
-
-- **GitHub:** [@Utsav173](https://github.com/Utsav173)
-- **LinkedIn:** [Utsav Khatri](https://linkedin.com/in/utsav-khatri-in)
-- **Email:** [khatriutsav40@gmail.com](mailto:khatriutsav40@gmail.com)
 
 ## License
 
