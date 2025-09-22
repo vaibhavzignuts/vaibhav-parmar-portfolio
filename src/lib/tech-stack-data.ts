@@ -239,11 +239,6 @@ export const TECH_STACK_DETAILS: TechDetails = {
     color: '#88CE02',
     name: 'GSAP',
   },
-  'gemini ai': {
-    icon: 'simple-icons:googlegemini',
-    color: '#4285F4',
-    name: 'Gemini AI',
-  },
   't3 stack': { icon: 'simple-icons:t3', color: '#2596be', name: 'T3 Stack' },
   trpc: { icon: 'logos:trpc', color: '#398CCB', name: 'tRPC' },
   'nextauth.js': {
