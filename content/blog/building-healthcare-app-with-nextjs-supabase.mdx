@@ -1,0 +1,208 @@
+---
+title: 'Building a Healthcare App with Next.js and Supabase: A Complete Guide'
+description: 'Learn how to build a full-stack healthcare application using Next.js, Supabase, and AI integration. From authentication to real-time data management and AI-powered features.'
+published: true
+date: '2024-12-15'
+tags: ['Next.js', 'Supabase', 'Healthcare', 'AI', 'Full-Stack', 'TypeScript', 'PostgreSQL']
+---
+
+## Introduction
+
+Building a healthcare application requires careful consideration of data security, user experience, and scalability. In this comprehensive guide, I'll walk you through how I built the Community Health Assistant using Next.js, Supabase, and AI integration.
+
+## Why This Tech Stack?
+
+### Next.js for Performance and SEO
+
+Next.js provides excellent performance optimizations out of the box, which is crucial for healthcare applications where users need quick access to information. The App Router offers better code organization and improved developer experience.
+
+### Supabase for Backend-as-a-Service
+
+Supabase provides a complete backend solution with:
+
+- **Authentication**: Built-in user management with email/password and social logins
+- **Database**: PostgreSQL with real-time subscriptions
+- **Storage**: Secure file storage for user data
+- **Row Level Security**: Essential for healthcare data protection
+
+### AI Integration with Gemini
+
+Google's Gemini API provides powerful AI capabilities for symptom checking and health insights while maintaining user privacy.
+
+## Project Architecture
+
+```
+src/
+├── app/
+│   ├── (auth)/
+│   │   ├── login/
+│   │   └── register/
+│   ├── dashboard/
+│   ├── symptoms/
+│   └── facilities/
+├── components/
+│   ├── ui/
+│   ├── forms/
+│   └── charts/
+├── lib/
+│   ├── supabase/
+│   ├── ai/
+│   └── utils/
+└── types/
+```
+
+## Key Features Implementation
+
+### 1. User Authentication with Supabase
+
+```typescript
+// lib/supabase/client.ts
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
+
+export const supabase = createClientComponentClient();
+
+// Authentication functions
+export const signUp = async (email: string, password: string) => {
+  const { data, error } = await supabase.auth.signUp({
+    email,
+    password,
+  });
+  return { data, error };
+};
+```
+
+### 2. AI-Powered Symptom Checker
+
+```typescript
+// lib/ai/symptom-checker.ts
+import { GoogleGenerativeAI } from '@google/generative-ai';
+
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
+
+export const analyzeSymptoms = async (symptoms: string, userInfo: any) => {
+  const model = genAI.getGenerativeModel({ model: 'gemini-pro' });
+
+  const prompt = `
+    Analyze these symptoms: ${symptoms}
+    User age: ${userInfo.age}
+    Medical history: ${userInfo.medicalHistory}
+    
+    Provide general health insights and recommendations.
+    Remember: This is not a substitute for professional medical advice.
+  `;
+
+  const result = await model.generateContent(prompt);
+  return result.response.text();
+};
+```
+
+### 3. Real-time Data Management
+
+```typescript
+// components/MedicineReminder.tsx
+import { useEffect, useState } from 'react';
+import { supabase } from '@/lib/supabase/client';
+
+export const MedicineReminder = () => {
+  const [reminders, setReminders] = useState([]);
+
+  useEffect(() => {
+    const channel = supabase
+      .channel('medicine_reminders')
+      .on('postgres_changes', { event: '*', schema: 'public', table: 'reminders' }, (payload) => {
+        setReminders((prev) => [...prev, payload.new]);
+      })
+      .subscribe();
+
+    return () => supabase.removeChannel(channel);
+  }, []);
+
+  // Component implementation...
+};
+```
+
+## Security Considerations
+
+### Row Level Security (RLS)
+
+```sql
+-- Enable RLS on user data
+ALTER TABLE user_health_data ENABLE ROW LEVEL SECURITY;
+
+-- Policy to ensure users can only access their own data
+CREATE POLICY "Users can only access their own health data" ON user_health_data
+  FOR ALL USING (auth.uid() = user_id);
+```
+
+### Data Encryption
+
+- All sensitive data is encrypted at rest
+- HTTPS enforced for all communications
+- API keys stored securely in environment variables
+
+## Performance Optimizations
+
+### 1. Image Optimization
+
+```typescript
+import Image from 'next/image'
+
+<Image
+  src="/healthcare-icon.webp"
+  alt="Healthcare"
+  width={500}
+  height={300}
+  priority
+  placeholder="blur"
+  blurDataURL="data:image/jpeg;base64,..."
+/>
+```
+
+### 2. Database Query Optimization
+
+```typescript
+// Use Supabase's built-in query optimization
+const { data, error } = await supabase
+  .from('health_facilities')
+  .select('id, name, address, distance')
+  .eq('city', userCity)
+  .order('distance', { ascending: true })
+  .limit(10);
+```
+
+## Deployment and Monitoring
+
+### Vercel Deployment
+
+```json
+// vercel.json
+{
+  "functions": {
+    "app/api/**/*.ts": {
+      "maxDuration": 30
+    }
+  },
+  "env": {
+    "SUPABASE_URL": "@supabase_url",
+    "SUPABASE_ANON_KEY": "@supabase_anon_key",
+    "GEMINI_API_KEY": "@gemini_api_key"
+  }
+}
+```
+
+## Lessons Learned
+
+1. **Privacy First**: Always implement proper data protection measures
+2. **User Experience**: Healthcare apps need intuitive interfaces
+3. **Performance**: Fast loading times are crucial for user trust
+4. **Scalability**: Design for growth from the beginning
+
+## Conclusion
+
+Building a healthcare application with Next.js and Supabase provides a solid foundation for creating secure, scalable, and user-friendly health solutions. The combination of modern web technologies with proper security measures ensures both developer productivity and user safety.
+
+The key is to always prioritize user privacy and data security while maintaining excellent performance and user experience.
+
+---
+
+_This blog post is based on my experience building the Community Health Assistant. You can view the live application at [ai-health-assistant-rho.vercel.app](https://ai-health-assistant-rho.vercel.app) and the source code on [GitHub](https://github.com/vaibhavzignuts/ai-health-assistant)._
