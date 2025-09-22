@@ -58,7 +58,7 @@ const AboutSectionComponent = ({ className, id }: { className?: string; id?: str
               }
             >
               <Image
-                src="/images/vaibhav-parmar.webp"
+                src="/images/vaibhav_resume.png"
                 alt="Professional headshot of Vaibhav Parmar, Software Engineer"
                 width={375}
                 height={375}
