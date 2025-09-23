@@ -1,4 +1,4 @@
-# Utsav Khatri - Full Stack Developer Portfolio
+# Vaibhav Parmar - Software Engineer Portfolio
 
 [![Next.js](https://img.shields.io/badge/Next.js-15.3.2-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![React.js](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
@@ -13,11 +13,11 @@ This repository contains the source code for my personal portfolio website, buil
 
 ## Live Demo
 
-[khatriutsav.com](https://khatriutsav.com)
+[vaibhavparmar.dev](https://vaibhavparmar.dev)
 
 ## About Me
 
-I'm Utsav Khatri, a dynamic and results-oriented Full Stack Developer with comprehensive experience in designing, developing, and deploying scalable, cloud-native web applications and robust APIs. I have proven expertise in React.js, Node.js, Next.js, TypeScript, and various cloud services (AWS, Cloudflare). I'm passionate about leveraging cutting-edge technologies to solve complex business challenges, foster team growth, and I have a keen interest in the practical applications of AI in web development.
+I'm Vaibhav Parmar, a passionate Software Engineer specializing in React.js, React Native, Next.js, TypeScript, and Supabase. I have comprehensive experience in building full-stack web applications, mobile apps, and healthcare solutions. I'm passionate about creating privacy-focused applications, seamless user experiences, and leveraging cutting-edge technologies to solve real-world problems.
 
 This portfolio is a testament to my dedication to building high-impact digital products and my journey in the ever-evolving tech landscape.
 
@@ -97,7 +97,7 @@ To get a local copy up and running, follow these simple steps.
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/Utsav173/MyPortfolio.git
+    git clone https://github.com/vaibhavparmar/vaibhav-parmar-portfolio.git
     cd MyPortfolio
     ```
 
@@ -125,7 +125,7 @@ To get a local copy up and running, follow these simple steps.
 
     # For generating absolute URLs (e.g., for metadata, sitemap, robots.txt)
     NEXT_PUBLIC_SITE_URL=http://localhost:3000 # For local development
-    # NEXT_PUBLIC_SITE_URL=https://khatriutsav.com/ # For production
+    # NEXT_PUBLIC_SITE_URL=https://vaibhavparmar.dev/ # For production
     ```
 
     _**Note on `GMAIL_PASS`**_: It's highly recommended to use an "App Password" for Nodemailer if you have 2-Step Verification enabled on your Google account. [Learn more here](https://support.google.com/accounts/answer/185833).

@@ -92,7 +92,7 @@ const CommandPaletteComponent = ({ isOpen, setIsOpen }: CommandPaletteProps) => 
         <CommandGroup heading="Links">
           <CommandItem
             value="GitHub"
-            onSelect={() => runCommand(() => window.open('https://github.com/Utsav173', '_blank'))}
+            onSelect={() => runCommand(() => window.open('https://github.com/vaibhavparmar', '_blank'))}
             className="cursor-pointer"
           >
             <Icon icon={'simple-icons:github'} className="mr-2 h-4 w-4" />
@@ -101,7 +101,7 @@ const CommandPaletteComponent = ({ isOpen, setIsOpen }: CommandPaletteProps) => 
           <CommandItem
             value="LinkedIn"
             onSelect={() =>
-              runCommand(() => window.open('https://linkedin.com/in/utsav-khatri-in', '_blank'))
+              runCommand(() => window.open('https://linkedin.com/in/vaibhav-parmar', '_blank'))
             }
             className="cursor-pointer"
           >

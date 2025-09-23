@@ -5,7 +5,7 @@ import { PageWrapper } from '@/components/layout/PageWrapper';
 export const metadata: Metadata = {
   title: 'About Me',
   description:
-    'Learn more about Utsav Khatri, a Full Stack Developer with a passion for building scalable web applications and exploring AI.',
+    'Learn more about Vaibhav Parmar, a Software Engineer with a passion for building React.js, React Native applications and healthcare solutions.',
 };
 
 export default function AboutPage() {

@@ -1,5 +1,6 @@
 {
-  "name": "portfolio",
+  "name": "vaibhav-parmar-portfolio",
+  "author": "Vaibhav Parmar <vaibhavparmar.dev@gmail.com>",
   "version": "0.1.0",
   "private": true,
   "engines": {

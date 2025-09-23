@@ -29,12 +29,12 @@ export function PostSchema({ post }: PostSchemaProps) {
     url: `${SITE_URL}/${post.slug}`,
     author: {
       '@type': 'Person',
-      name: post.author?.name || 'Utsav Khatri',
+      name: post.author?.name || 'Vaibhav Parmar',
       url: post.author?.url || SITE_URL,
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Utsav Khatri',
+      name: 'Vaibhav Parmar',
       url: SITE_URL,
       logo: {
         '@type': 'ImageObject',
@@ -83,7 +83,7 @@ export function PostSchema({ post }: PostSchemaProps) {
     description: 'Full Stack Developer & Technical Writer',
     publisher: {
       '@type': 'Person',
-      name: 'Utsav Khatri',
+      name: 'Vaibhav Parmar',
     },
     potentialAction: {
       '@type': 'SearchAction',
@@ -103,9 +103,9 @@ export function PostSchema({ post }: PostSchemaProps) {
     jobTitle: 'Full Stack Developer',
     description: 'Full Stack Developer specializing in React, Next.js, and modern web technologies',
     sameAs: [
-      'https://twitter.com/Utsav_Khatri_',
-      'https://www.linkedin.com/in/utsav-khatri-in/',
-      'https://github.com/utsavkhatri',
+      'https://twitter.com/VaibhavParmar',
+      'https://www.linkedin.com/in/vaibhav-parmar/',
+      'https://github.com/vaibhavparmar',
     ],
     knowsAbout: [
       'Web Development',

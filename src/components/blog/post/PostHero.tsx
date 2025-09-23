@@ -106,11 +106,11 @@ export function PostHero({ post }: PostHeroProps) {
             {/* Author */}
             <div className="flex items-center gap-3">
               <Avatar className="h-12 w-12 border-2 border-primary/20">
-                <AvatarImage src="/images/utsav-khatri.webp" alt="Utsav Khatri" />
+                <AvatarImage src="/images/vaibhav_resume.png" alt="Vaibhav Parmar" />
                 <AvatarFallback>UK</AvatarFallback>
               </Avatar>
               <div>
-                <p className="font-semibold">Utsav Khatri</p>
+                <p className="font-semibold">Vaibhav Parmar</p>
                 <p className="text-sm text-muted-foreground">Full Stack Developer</p>
               </div>
             </div>

@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: PageProps<'/projects/[id]'>):
       canonical: `${SITE_URL}/projects/${project.id}`,
     },
     openGraph: {
-      title: `${project.name} | Utsav Khatri`,
+      title: `${project.name} | Vaibhav Parmar`,
       description: project.description,
       url: `${SITE_URL}/projects/${project.id}`,
       images: [
@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: PageProps<'/projects/[id]'>):
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${project.name} | Utsav Khatri`,
+      title: `${project.name} | Vaibhav Parmar`,
       description: project.description,
       images: [imageUrl],
     },
@@ -71,7 +71,7 @@ export default async function ProjectPage({ params }: PageProps<'/projects/[id]'
     image: project.imageUrl ? `${SITE_URL}${project.imageUrl}` : `${SITE_URL}/og-image.png`,
     author: {
       '@type': 'Person',
-      name: 'Utsav Khatri',
+      name: 'Vaibhav Parmar',
     },
     datePublished: '2023-01-01',
     keywords: project.techStack.join(', '),

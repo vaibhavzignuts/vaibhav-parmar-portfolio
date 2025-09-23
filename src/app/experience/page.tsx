@@ -5,7 +5,7 @@ import { PageWrapper } from '@/components/layout/PageWrapper';
 export const metadata: Metadata = {
   title: 'Experience',
   description:
-    'Discover the professional journey of Utsav Khatri, including roles, responsibilities, and key projects.',
+    'Discover the professional journey of Vaibhav Parmar, including roles, responsibilities, and key projects.',
   keywords: [
     'Professional Experience',
     'Work History',

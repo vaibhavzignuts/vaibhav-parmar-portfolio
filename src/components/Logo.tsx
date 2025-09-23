@@ -10,7 +10,7 @@ const LogoComponent = ({ className }: LogoProps) => {
   return (
     <Link
       href="/"
-      aria-label="Utsav Khatri - Homepage"
+      aria-label="Vaibhav Parmar - Homepage"
       className={cn(
         'group flex items-center rounded-sm transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background',
         className

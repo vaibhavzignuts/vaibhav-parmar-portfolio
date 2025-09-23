@@ -88,7 +88,7 @@ export function Navbar({ className, activeSection }: NavbarProps) {
               rel="noopener noreferrer"
               download="resume_vaibhav_parmar.pdf"
               className="flex items-center justify-center"
-              aria-label="Download Utsav Khatri's Resume"
+              aria-label="Download Vaibhav Parmar's Resume"
             >
               Resume
               <Download className="ml-1.5 size-3" />

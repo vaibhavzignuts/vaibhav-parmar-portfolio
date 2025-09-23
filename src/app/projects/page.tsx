@@ -45,7 +45,7 @@ async function getProjects(): Promise<Project[]> {
 export const metadata: Metadata = {
   title: 'Projects',
   description:
-    'A collection of projects by Utsav Khatri, showcasing skills in full-stack development, AI, and more.',
+    'A collection of projects by Vaibhav Parmar, showcasing skills in React.js, React Native, Next.js, and mobile development.',
   keywords: [
     'Projects',
     'Portfolio',
@@ -63,9 +63,9 @@ export const metadata: Metadata = {
 const projectsCollectionSchema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: "Utsav Khatri's Projects",
+  name: "Vaibhav Parmar's Projects",
   description:
-    'A comprehensive collection of web development, AI, and cloud projects by Utsav Khatri.',
+    'A comprehensive collection of web development, mobile app, and healthcare projects by Vaibhav Parmar.',
   url: `${SITE_URL}/projects`,
 };
 

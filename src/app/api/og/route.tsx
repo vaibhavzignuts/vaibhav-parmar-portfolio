@@ -32,7 +32,7 @@ export async function GET(req: NextRequest) {
             flexDirection: 'column',
             alignItems: 'flex-start',
             justifyContent: 'center',
-            backgroundImage: 'url(https://khatriutsav.com/og-bg.png)',
+            backgroundImage: 'url(https://vaibhavparmar.dev/og-bg.png)',
             backgroundSize: '1200px 630px',
             color: '#ffffff',
             fontWeight: 700,
@@ -47,7 +47,7 @@ export async function GET(req: NextRequest) {
               color: '#cbd5e1',
             }}
           >
-            Utsav Khatri&apos;s Blog
+            Vaibhav Parmar&apos;s Blog
           </div>
           <div
             style={{

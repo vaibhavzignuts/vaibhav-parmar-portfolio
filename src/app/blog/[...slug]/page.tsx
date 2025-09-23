@@ -37,7 +37,7 @@ export async function generateMetadata({
   return {
     title: post.title,
     description: post.description,
-    authors: [{ name: 'Utsav Khatri', url: SITE_URL }],
+    authors: [{ name: 'Vaibhav Parmar', url: SITE_URL }],
     alternates: {
       canonical: `${SITE_URL}/${post.slug}`,
     },

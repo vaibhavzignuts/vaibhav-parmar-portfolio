@@ -98,7 +98,7 @@ export function ProjectsSection({
       keywords: project.techStack?.join(', '),
       creator: {
         '@type': 'Person',
-        name: 'Utsav Khatri',
+        name: 'Vaibhav Parmar',
       },
     };
 

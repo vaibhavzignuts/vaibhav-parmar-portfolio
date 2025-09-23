@@ -132,8 +132,8 @@ export function PostFooter({ post }: PostFooterProps) {
           <div className="flex-shrink-0">
             <div className="relative h-24 w-24 sm:h-32 sm:w-32">
               <Image
-                src="/images/utsav-khatri.webp"
-                alt="Utsav Khatri"
+                src="/images/vaibhav_resume.png"
+                alt="Vaibhav Parmar"
                 fill
                 className="rounded-full object-cover ring-4 ring-primary/10"
               />

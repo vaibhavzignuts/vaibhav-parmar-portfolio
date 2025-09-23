@@ -5,9 +5,9 @@ import { SITE_URL } from '@/lib/config';
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: 'Get in touch with Utsav Khatri to discuss projects, ideas, or opportunities.',
+  description: 'Get in touch with Vaibhav Parmar to discuss projects, ideas, or opportunities.',
   keywords: [
-    'Contact Utsav Khatri',
+    'Contact Vaibhav Parmar',
     'Get in Touch',
     'Email',
     'Collaboration',
@@ -20,8 +20,8 @@ export const metadata: Metadata = {
 const contactPageSchema = {
   '@context': 'https://schema.org',
   '@type': 'ContactPage',
-  name: 'Contact Utsav Khatri',
-  description: 'Contact form and details to get in touch with Utsav Khatri.',
+  name: 'Contact Vaibhav Parmar',
+  description: 'Contact form and details to get in touch with Vaibhav Parmar.',
   url: `${SITE_URL}/contact`,
   potentialAction: {
     '@type': 'CommunicateAction',
@@ -35,7 +35,7 @@ const contactPageSchema = {
     },
     recipient: {
       '@type': 'Person',
-      name: 'Utsav Khatri',
+      name: 'Vaibhav Parmar',
     },
   },
 };
