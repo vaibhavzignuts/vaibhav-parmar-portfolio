@@ -1,0 +1,23 @@
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://vaibhav-parmar-portfolio.vercel.app/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+# Allow important pages
+Allow: /blog/
+Allow: /projects/
+Allow: /about/
+Allow: /contact/
+Allow: /experience/
+Allow: /skills/
