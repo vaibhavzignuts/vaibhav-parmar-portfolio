@@ -123,7 +123,8 @@ export const metadata: Metadata = {
     },
   },
   icons: { icon: '/favicon.svg', shortcut: '/favicon-16x16.png', apple: '/apple-touch-icon.png' },
-  verification: { google: 'tNXFFpZE1VOHdcWpBlnAsX7avQThqRD6wjolUQaG4rU' },
+  verification: { google: 'lecR2fXC0bJUyoVf73iX9F4An1hM1c2Cp0KxqzoI314' },
+
 };
 
 export const viewport: Viewport = {

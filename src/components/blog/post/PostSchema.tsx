@@ -101,7 +101,8 @@ export function PostSchema({ post }: PostSchemaProps) {
     name: 'Vaibhav Parmar',
     url: SITE_URL,
     jobTitle: 'Software Engineer',
-    description: 'Software Engineer specializing in React.js, React Native, Next.js, TypeScript, and Supabase',
+    description:
+      'Software Engineer specializing in React.js, React Native, Next.js, TypeScript, and Supabase',
     sameAs: [
       'https://twitter.com/VaibhavParmar',
       'https://www.linkedin.com/in/vaibhav-parmar/',

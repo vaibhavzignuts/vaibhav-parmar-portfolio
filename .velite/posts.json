@@ -129,6 +129,33 @@
     "slugAsParams": "building-healthcare-app-with-nextjs-supabase"
   },
   {
+    "slug": "blog/nextjs-performance-optimization",
+    "title": "Next.js Performance Optimization: A Complete Guide",
+    "description": "Learn advanced techniques to optimize Next.js applications for maximum performance, including code splitting, image optimization, and caching strategies.",
+    "date": "2024-12-20T00:00:00.000Z",
+    "published": true,
+    "tags": [
+      "Next.js",
+      "Performance",
+      "Optimization",
+      "Web Vitals",
+      "SEO"
+    ],
+    "body": "const{Fragment:n,jsx:t,jsxs:e}=arguments[0];function _createMdxContent(r){const o={a:\"a\",h2:\"h2\",p:\"p\",...r.components};return e(n,{children:[t(o.h2,{id:\"introduction\",children:t(o.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#introduction\",children:\"Introduction\"})}),\"\\n\",t(o.p,{children:\"Performance optimization is crucial for modern web applications...\"})]})}return{default:function(n={}){const{wrapper:e}=n.components||{};return e?t(e,{...n,children:t(_createMdxContent,{...n})}):_createMdxContent(n)}};",
+    "metadata": {
+      "readingTime": 1,
+      "wordCount": 9
+    },
+    "toc": [
+      {
+        "title": "Introduction",
+        "url": "#introduction",
+        "items": []
+      }
+    ],
+    "slugAsParams": "nextjs-performance-optimization"
+  },
+  {
     "slug": "blog/react-native-mobile-app-development-guide",
     "title": "React Native Mobile App Development: From Expo to Production",
     "description": "A comprehensive guide to building production-ready mobile applications with React Native, Expo, and Supabase. Learn best practices for authentication, state management, and deployment.",

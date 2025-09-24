@@ -1,0 +1,193 @@
+---
+title: 'Community Health Assistant: Building Healthcare Apps with Next.js'
+description: 'A detailed case study of building a full-stack healthcare application with AI integration, covering challenges, solutions, and lessons learned.'
+published: true
+date: '2024-12-18'
+tags: ['Case Study', 'Healthcare', 'Next.js', 'AI', 'Supabase']
+---
+
+## Project Overview
+
+The Community Health Assistant was built to address...
+
+## 🎯 **Specific Solutions to Increase Crawl Demand**
+
+### **Solution 1: Add More High-Quality Content**
+
+Your portfolio has good content, but let's add more to increase crawl demand:
+
+#### **A. Add More Blog Posts**
+
+Create 2-3 more technical blog posts:
+
+```markdown:content/blog/nextjs-performance-optimization.mdx
+---
+title: 'Next.js Performance Optimization: A Complete Guide'
+description: 'Learn advanced techniques to optimize Next.js applications for maximum performance, including code splitting, image optimization, and caching strategies.'
+published: true
+date: '2024-12-20'
+tags: ['Next.js', 'Performance', 'Optimization', 'Web Vitals', 'SEO']
+---
+
+## Introduction
+
+Performance optimization is crucial for modern web applications...
+```
+
+#### **B. Add Case Studies**
+
+Create detailed case studies for each project:
+
+```markdown:content/case-studies/community-health-assistant.mdx
+---
+title: 'Community Health Assistant: Building Healthcare Apps with Next.js'
+description: 'A detailed case study of building a full-stack healthcare application with AI integration, covering challenges, solutions, and lessons learned.'
+published: true
+date: '2024-12-18'
+tags: ['Case Study', 'Healthcare', 'Next.js', 'AI', 'Supabase']
+---
+
+## Project Overview
+
+The Community Health Assistant was built to address...
+```
+
+### **Solution 2: Improve Internal Linking**
+
+Add more internal links between pages to increase crawl demand:
+
+#### **A. Add Related Content Sections**
+
+```typescript
+// Add to project pages
+const relatedProjects = getRelatedProjects(currentProject);
+const relatedBlogPosts = getRelatedBlogPosts(currentProject.techStack);
+```
+
+#### **B. Add Breadcrumb Navigation**
+
+```typescript
+// Add breadcrumbs to all pages
+<Breadcrumb>
+  <BreadcrumbItem href="/">Home</BreadcrumbItem>
+  <BreadcrumbItem href="/projects">Projects</BreadcrumbItem>
+  <BreadcrumbItem>{project.name}</BreadcrumbItem>
+</Breadcrumb>
+```
+
+### **Solution 3: Add More Pages**
+
+#### **A. Create Skill-Specific Pages**
+
+```typescript
+// src/app/skills/[skill]/page.tsx
+export default function SkillPage({ params }: { params: { skill: string } }) {
+  const skill = params.skill;
+  const projects = getProjectsBySkill(skill);
+  const blogPosts = getBlogPostsBySkill(skill);
+
+  return (
+    <div>
+      <h1>{skill} Projects and Resources</h1>
+      {/* Show projects and blog posts related to this skill */}
+    </div>
+  );
+}
+```
+
+#### **B. Create Tag Pages for Blog**
+
+```typescript
+// src/app/blog/tag/[tag]/page.tsx
+export default function TagPage({ params }: { params: { tag: string } }) {
+  const tag = params.tag;
+  const posts = getPostsByTag(tag);
+
+  return (
+    <div>
+      <h1>Posts tagged with "{tag}"</h1>
+      {/* Show filtered blog posts */}
+    </div>
+  );
+}
+```
+
+### **Solution 4: Improve Content Freshness**
+
+#### **A. Add Last Modified Dates**
+
+```typescript
+// Update sitemap.ts to include actual last modified dates
+const projectUrls = projects.map((project) => ({
+  url: `${SITE_URL}/projects/${project.id}`,
+  lastModified: new Date(project.lastModified || '2024-01-01'),
+  changeFrequency: 'yearly' as const,
+  priority: 0.7,
+}));
+```
+
+#### **B. Add Update Notifications**
+
+```typescript
+// Add to project pages
+<div className="update-notice">
+  Last updated: {formatDate(project.lastUpdated)}
+</div>
+```
+
+### **Solution 5: Submit Individual URLs First**
+
+Instead of waiting for the sitemap, submit individual URLs:
+
+1. **Go to Google Search Console**
+2. **Use "URL Inspection" tool**
+3. **Submit these URLs one by one:**
+   - `https://vaibhav-parmar-portfolio.vercel.app/`
+   - `https://vaibhav-parmar-portfolio.vercel.app/about`
+   - `https://vaibhav-parmar-portfolio.vercel.app/projects`
+   - `https://vaibhav-parmar-portfolio.vercel.app/blog`
+   - `https://vaibhav-parmar-portfolio.vercel.app/building-healthcare-app-with-nextjs-supabase`
+
+### **Solution 6: Create External Backlinks**
+
+#### **A. Share on Social Media**
+
+- LinkedIn: Share your portfolio
+- Twitter: Tweet about your projects
+- Dev.to: Cross-post your blog content
+
+#### **B. Submit to Directories**
+
+- [GitHub Pages](https://pages.github.com)
+- [Product Hunt](https://www.producthunt.com)
+- [Dev.to](https://dev.to)
+
+## 🚀 **Immediate Action Plan**
+
+### **Step 1: Submit Individual URLs (Do Now)**
+
+1. Go to Google Search Console
+2. Use "URL Inspection" tool
+3. Submit your homepage and key pages
+
+### **Step 2: Add More Content (This Week)**
+
+1. Create 2-3 more blog posts
+2. Add case studies for your projects
+3. Create skill-specific pages
+
+### **Step 3: Improve Internal Linking (This Week)**
+
+1. Add related content sections
+2. Add breadcrumb navigation
+3. Link between related pages
+
+### **Step 4: Monitor Progress (Ongoing)**
+
+1. Check Google Search Console daily
+2. Monitor crawl stats
+3. Track indexing progress
+
+The "low crawl demand" issue is common for new portfolios. By adding more high-quality content and improving internal linking, you'll increase Google's interest in crawling your site.
+
+Would you like me to help you implement any of these solutions?
