@@ -121,7 +121,15 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  icons: { icon: '/favicon.svg', shortcut: '/favicon-16x16.png', apple: '/apple-touch-icon.png' },
+  icons: { 
+    icon: [
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+    ],
+    shortcut: '/favicon-16x16.png',
+    apple: '/apple-touch-icon.png',
+  },
   verification: { google: 'lecR2fXC0bJUyoVf73iX9F4An1hM1c2Cp0KxqzoI314' },
   category: 'technology',
   classification: 'Portfolio',
