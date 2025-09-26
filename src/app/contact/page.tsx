@@ -4,17 +4,55 @@ import { PageWrapper } from '@/components/layout/PageWrapper';
 import { SITE_URL } from '@/lib/config';
 
 export const metadata: Metadata = {
-  title: 'Contact',
-  description: 'Get in touch with Vaibhav Parmar to discuss projects, ideas, or opportunities.',
+  title: 'Contact Vaibhav Parmar - Software Engineer & React Developer',
+  description:
+    'Get in touch with Vaibhav Parmar, Software Engineer specializing in React.js and React Native. Discuss projects, collaboration opportunities, or hire for full-stack development work.',
   keywords: [
     'Contact Vaibhav Parmar',
+    'Vaibhav Parmar Contact',
+    'Hire Vaibhav Parmar',
+    'Software Engineer Contact',
+    'React Developer Contact',
+    'React Native Developer Contact',
+    'Full Stack Developer Contact',
     'Get in Touch',
-    'Email',
+    'Email Vaibhav Parmar',
     'Collaboration',
     'Project Inquiries',
     'Hire Full Stack Developer',
+    'Hire React Developer',
+    'Hire Mobile Developer',
     'Contact Software Engineer',
+    'Web Developer Contact',
+    'Mobile App Developer Contact',
+    'Freelance Developer',
+    'Contract Developer',
   ],
+  openGraph: {
+    title: 'Contact Vaibhav Parmar - Software Engineer & React Developer',
+    description:
+      'Get in touch with Vaibhav Parmar, Software Engineer specializing in React.js and React Native. Discuss projects, collaboration opportunities, or hire for full-stack development work.',
+    type: 'website',
+    url: 'https://vaibhav-parmar-portfolio.vercel.app/contact',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Contact Vaibhav Parmar - Software Engineer',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact Vaibhav Parmar - Software Engineer & React Developer',
+    description:
+      'Get in touch with Vaibhav Parmar, Software Engineer specializing in React.js and React Native. Discuss projects and collaboration opportunities.',
+    images: ['/twitter-image.png'],
+  },
+  alternates: {
+    canonical: 'https://vaibhav-parmar-portfolio.vercel.app/contact',
+  },
 };
 
 const contactPageSchema = {

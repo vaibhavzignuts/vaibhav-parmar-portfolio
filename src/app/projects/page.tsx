@@ -43,21 +43,53 @@ async function getProjects(): Promise<Project[]> {
 }
 
 export const metadata: Metadata = {
-  title: 'Projects',
+  title: 'Vaibhav Parmar Projects - React.js & React Native Portfolio',
   description:
-    'A collection of projects by Vaibhav Parmar, showcasing skills in React.js, React Native, Next.js, and mobile development.',
+    "Explore Vaibhav Parmar's portfolio of innovative projects including React.js web applications, React Native mobile apps, healthcare solutions, and AI-powered applications. Discover his expertise in full-stack development.",
   keywords: [
-    'Projects',
-    'Portfolio',
-    'Full Stack Development',
-    'Web Applications',
-    'AI Projects',
-    'Mobile Apps',
-    'Open Source',
+    'Vaibhav Parmar Projects',
+    'React.js Projects',
+    'React Native Projects',
     'Next.js Projects',
-    'React Projects',
-    'Node.js Projects',
+    'Mobile App Development',
+    'Web Development Portfolio',
+    'Full Stack Projects',
+    'Healthcare Applications',
+    'AI Projects',
+    'JavaScript Projects',
+    'TypeScript Projects',
+    'Supabase Projects',
+    'Open Source Projects',
+    'Software Engineer Portfolio',
+    'Developer Projects',
+    'Web Applications',
+    'Mobile Applications',
   ],
+  openGraph: {
+    title: 'Vaibhav Parmar Projects - React.js & React Native Portfolio',
+    description:
+      "Explore Vaibhav Parmar's portfolio of innovative projects including React.js web applications, React Native mobile apps, and healthcare solutions.",
+    type: 'website',
+    url: 'https://vaibhav-parmar-portfolio.vercel.app/projects',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Vaibhav Parmar Projects Portfolio',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Vaibhav Parmar Projects - React.js & React Native Portfolio',
+    description:
+      "Explore Vaibhav Parmar's portfolio of innovative projects including React.js web applications, React Native mobile apps, and healthcare solutions.",
+    images: ['/twitter-image.png'],
+  },
+  alternates: {
+    canonical: 'https://vaibhav-parmar-portfolio.vercel.app/projects',
+  },
 };
 
 const projectsCollectionSchema = {

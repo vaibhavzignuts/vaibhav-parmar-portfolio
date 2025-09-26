@@ -33,10 +33,53 @@ const skills = [
 ];
 
 export const metadata: Metadata = {
-  title: 'Skills',
+  title: 'Vaibhav Parmar Skills - React.js, React Native & Full Stack Developer',
   description:
-    'Explore the technical toolkit of Vaibhav Parmar, including expertise in React.js, React Native, Next.js, Supabase, and mobile development.',
-  keywords: skills,
+    "Discover Vaibhav Parmar's comprehensive technical skills including React.js, React Native, Next.js, TypeScript, Supabase, and mobile development expertise. Explore his full-stack development capabilities.",
+  keywords: [
+    'Vaibhav Parmar Skills',
+    'React.js Skills',
+    'React Native Skills',
+    'Next.js Skills',
+    'TypeScript Skills',
+    'JavaScript Skills',
+    'Full Stack Developer Skills',
+    'Mobile Development Skills',
+    'Web Development Skills',
+    'Software Engineer Skills',
+    'Frontend Developer Skills',
+    'Backend Developer Skills',
+    'Supabase Skills',
+    'PostgreSQL Skills',
+    'UI/UX Skills',
+    'API Development Skills',
+    ...skills,
+  ],
+  openGraph: {
+    title: 'Vaibhav Parmar Skills - React.js, React Native & Full Stack Developer',
+    description:
+      "Discover Vaibhav Parmar's comprehensive technical skills including React.js, React Native, Next.js, TypeScript, and Supabase expertise.",
+    type: 'profile',
+    url: 'https://vaibhav-parmar-portfolio.vercel.app/skills',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Vaibhav Parmar Technical Skills',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Vaibhav Parmar Skills - React.js, React Native & Full Stack Developer',
+    description:
+      "Discover Vaibhav Parmar's comprehensive technical skills including React.js, React Native, Next.js, TypeScript, and Supabase expertise.",
+    images: ['/twitter-image.png'],
+  },
+  alternates: {
+    canonical: 'https://vaibhav-parmar-portfolio.vercel.app/skills',
+  },
 };
 
 const skillsSchema = {

@@ -34,8 +34,8 @@ const notoSansDevanagari = Noto_Sans_Devanagari({
 });
 
 const SITE_DESCRIPTION =
-  'Portfolio of Vaibhav Parmar, a passionate Software Engineer specializing in React.js, React Native, Next.js, TypeScript, and Supabase with a focus on privacy-focused applications.';
-const SITE_TITLE = 'Vaibhav Parmar | Software Engineer';
+  'Vaibhav Parmar is a passionate Software Engineer specializing in React.js, React Native, Next.js, TypeScript, and Supabase. Discover his portfolio showcasing expertise in mobile development, web applications, and privacy-focused solutions.';
+const SITE_TITLE = 'Vaibhav Parmar - Software Engineer & React Developer';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -88,16 +88,15 @@ export const metadata: Metadata = {
   creator: 'Vaibhav Parmar',
   openGraph: {
     title: SITE_TITLE,
-    description:
-      'Discover the portfolio of Vaibhav Parmar, showcasing expertise in React.js, React Native, and mobile development.',
+    description: SITE_DESCRIPTION,
     url: SITE_URL,
-    siteName: 'Vaibhav Parmar Portfolio',
+    siteName: 'Vaibhav Parmar - Software Engineer',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Vaibhav Parmar - Software Engineer Portfolio',
+        alt: 'Vaibhav Parmar - Software Engineer & React Developer Portfolio',
       },
     ],
     locale: 'en_US',
@@ -106,10 +105,10 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: SITE_TITLE,
-    description:
-      'Explore projects and skills of Vaibhav Parmar, a Software Engineer focused on React.js and React Native development.',
+    description: SITE_DESCRIPTION,
     images: ['/twitter-image.png'],
     creator: '@VaibhavParmar',
+    site: '@VaibhavParmar',
   },
   robots: {
     index: true,
@@ -124,7 +123,9 @@ export const metadata: Metadata = {
   },
   icons: { icon: '/favicon.svg', shortcut: '/favicon-16x16.png', apple: '/apple-touch-icon.png' },
   verification: { google: 'lecR2fXC0bJUyoVf73iX9F4An1hM1c2Cp0KxqzoI314' },
-
+  category: 'technology',
+  classification: 'Portfolio',
+  referrer: 'origin-when-cross-origin',
 };
 
 export const viewport: Viewport = {
@@ -190,6 +191,7 @@ const structuredData = {
       '@type': 'Person',
       '@id': `${SITE_URL}/#person`,
       name: 'Vaibhav Parmar',
+      alternateName: 'Vaibhav Parmar Software Engineer',
       url: SITE_URL,
       image: `${SITE_URL}/images/vaibhav-parmar.webp`,
       jobTitle: 'Software Engineer',
@@ -206,6 +208,9 @@ const structuredData = {
         'Expo',
         'Mobile Development',
         'Privacy-Focused Applications',
+        'Full-Stack Development',
+        'Web Development',
+        'UI/UX Design',
       ],
       workLocation: {
         '@type': 'Place',
@@ -217,12 +222,19 @@ const structuredData = {
       },
       worksFor: worksFor,
       hasOccupation: hasOccupation,
+      alumniOf: {
+        '@type': 'EducationalOrganization',
+        name: 'Gujarat Technological University',
+      },
+      award: 'Best Project Award',
+      knowsLanguage: ['English', 'Gujarati', 'Hindi'],
     },
     {
       '@type': 'WebSite',
       '@id': `${SITE_URL}/#website`,
       url: SITE_URL,
-      name: SITE_TITLE,
+      name: 'Vaibhav Parmar - Software Engineer',
+      alternateName: 'Vaibhav Parmar Portfolio',
       description: SITE_DESCRIPTION,
       publisher: {
         '@id': `${SITE_URL}/#person`,
