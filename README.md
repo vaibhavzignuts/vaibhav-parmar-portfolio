@@ -13,7 +13,7 @@ This repository contains the source code for my personal portfolio website, buil
 
 ## Live Demo
 
-[vaibhavparmar.dev](https://vaibhavparmar.dev)
+[vaibhavparmar.dev](https://vaibhav-parmar-portfolio.vercel.app/)
 
 ## About Me
 
